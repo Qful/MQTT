@@ -19,4 +19,6 @@ EXPOSE 15672
 
 # run shell
 ADD ./run.sh /run.sh
-CMD ["/bin/bash", "/run.sh"]
+RUN chmod +x /run.sh
+ENTRYPOINT ["/bin/bash"]
+CMD ["/run.sh"]
