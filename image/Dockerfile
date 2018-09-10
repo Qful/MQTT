@@ -13,7 +13,7 @@ EXPOSE 15675
 EXPOSE 15672
 
 # file owner
-RUN chown rabbitmq:rabbitmq /var/lib/rabbitmq/.erlang.cookie
+#RUN chown rabbitmq:rabbitmq /var/lib/rabbitmq/.erlang.cookie
 
 #run with system
 RUN systemctl enable rabbitmq-server.service
@@ -25,7 +25,7 @@ RUN rabbitmq-plugins enable rabbitmq_web_mqtt
 
 #RUN rabbitmq-plugins enable rabbitmq_web_mqtt_examples
 
-# restart system
+#restart system
 
 RUN service rabbitmq-server stop
 RUN service rabbitmq-server start
