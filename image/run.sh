@@ -4,20 +4,18 @@
 echo "in run.sh shell"
 
 service rabbitmq-server stop
-sleep 10
+sleep 5
 chown rabbitmq:rabbitmq /var/lib/rabbitmq/.erlang.cookie
-sleep 2
+sleep 1
 service rabbitmq-server start
-sleep 10
-#rabbitmq-server on
+sleep 5
 
-rabbitmqctl delete_user  guest
-sleep 2
 rabbitmqctl add_user  qitas  test1234
-sleep 2
 rabbitmqctl set_user_tags qitas administrator
-sleep 2
+rabbitmqctl delete_user  guest
 rabbitmqctl list_users
-sleep 2
 
 echo "done qitas configure"
+service rabbitmq-server stop
+sleep 4
+rabbitmq-server on
