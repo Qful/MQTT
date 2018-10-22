@@ -10,7 +10,7 @@ sleep 1
 service rabbitmq-server start
 sleep 5
 
-rabbitmqctl add_user  qitas  test1234
+rabbitmqctl add_user  test  test123456
 rabbitmqctl set_user_tags qitas administrator
 rabbitmqctl delete_user  guest
 rabbitmqctl list_users
