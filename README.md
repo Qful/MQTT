@@ -44,6 +44,21 @@ rabbitmqctl  list_user_permissions  User
 
 rabbitmqctl  clear_permissions  [-p VHostPath]  User
 
+
+- 配置最大连接限制
+
+rabbitmqctl set_vhost_limits -p vhost_name'{“max-connections”：256}'
+
+rabbitmqctl set_vhost_limits -p vhost_name'{“max-connections”：0}'
+
+rabbitmqctl set_vhost_limits -p vhost_name'{“max-connections”：-1}'
+
+- 配置最大队列数
+
+rabbitmqctl set_vhost_limits -p vhost_name'{“max-queues”：1024}'
+
+rabbitmqctl set_vhost_limits -p vhost_name'{“max-queues”：-1}'
+
 ---
 
 
