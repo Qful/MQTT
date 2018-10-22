@@ -1,6 +1,6 @@
+
 # MQTT
 
-[![sites](docs/Q.png)](http://qitas.cn)
 
 ## 描述
 
@@ -8,11 +8,15 @@ M2M通信中间件服务端，MQTT Broker
 
 ## 组成
 
-可安装使用多种框架
+
 - RabbitMQ
 - Apollo
 - mosquitto
 - EMQ
+
+## client 
+
+用于测试的client端代码
 
 ## 说明
 
