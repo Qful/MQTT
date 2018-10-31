@@ -4,22 +4,23 @@
 
 ## 描述
 
-M2M通信中间件服务端，MQTT Broker
+用于放置MQTT各种连接的代码
+
+---
 
 ## 组成
 
+#### client 
 
-- RabbitMQ
-- Apollo
-- mosquitto
-- EMQ
+用于测试的client端的脚本
 
-## client 
+#### ESP8266
 
-用于测试的client端代码
+wifi节点芯片代码
 
-## 说明
 
-需要切换不同的分支，需要有docker的基础环境
+---
 
-![Docker Logo](docs/docker.png)
+## 为锻造最美之器
+
+[![sites](qitas/qitas.png)](http://www.qitas.cn)
