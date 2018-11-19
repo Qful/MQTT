@@ -1,6 +1,6 @@
+# [MQTT](https://github.com/qitas/MQTT) 
 
-# MQTT
-
+### qitas@qitas.cn
 
 ## 描述
 
@@ -14,7 +14,7 @@
 
 用于测试的client端的脚本
 
-#### ESP8266
+#### WIFI
 
 wifi节点芯片代码
 
