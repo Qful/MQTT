@@ -1,0 +1,6 @@
+obj/
+list/
+BUILD/
+*.uvgui.*
+*.uvgui_*
+*.uvopt
